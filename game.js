@@ -8,7 +8,6 @@ const maxChargeTime = 1000; // Max charge time for boost (in milliseconds)
 const groundLevel = canvas.height - 40;
 const speed = 5;
 
-// Red square object
 let redSquare = {
     x: 180,
     y: groundLevel,

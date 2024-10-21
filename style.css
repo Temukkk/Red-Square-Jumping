@@ -19,7 +19,7 @@ body {
     text-align: center;
     font-size: 35px;
     position: absolute; /* Allow text to overlay without affecting the canvas */
-    top: 20px; /* Position the text above the canvas */
+    top: 20px; 
 }
 
 .fade-text {
