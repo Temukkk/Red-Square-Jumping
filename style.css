@@ -17,7 +17,7 @@ body {
 
 .text {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     position: absolute; /* Allow text to overlay without affecting the canvas */
     top: 20px; /* Position the text above the canvas */
 }

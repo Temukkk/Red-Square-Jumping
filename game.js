@@ -1,7 +1,6 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
-// Constants
 const gravity = 0.6;
 const jumpPower = -12;
 const boostJumpPower = -20; // Higher jump when boosted
