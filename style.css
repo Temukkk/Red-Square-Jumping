@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Indie Flower", cursive;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Center texts vertically */
+    align-items: flex-start; /* Align items to the start (top) */
+}
+
+.text {
+    text-align: center;
+    font-size: 40px;
+    position: absolute; /* Allow text to overlay without affecting the canvas */
+    top: 20px; /* Position the text above the canvas */
+}
+
+.fade-text {
+    opacity: 0; /* Start invisible */
+    transition: opacity 1s ease; /* Fade effect */
+    margin: 10px; /* Space between texts */
+}
+
+.fade-in {
+    opacity: 1; /* Make text visible */
+}
+
+.fade-out {
+    opacity: 0; /* Make text invisible */
+}

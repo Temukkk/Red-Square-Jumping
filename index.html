@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jumping Red Square Game</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #f0f0f0;
-    }
-    #gameCanvas {
-      border: 2px solid black;
-      background-color: #fff;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumping Red Square Game</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #gameCanvas {
+            border: 2px solid black;
+            background-color: #fff;
+        }
+        
+        /* New path box styling */
+        .path-box {
+            position: absolute;
+            left: 50%; /* Center horizontally */
+            bottom: 80px; /* Adjust this to place it above the canvas */
+            transform: translateX(-50%); /* Center adjustment */
+            width: 100px; /* Change as needed */
+            height: 100px; /* Change as needed */
+            background-color: blue; /* Change color as needed */
+            display: none; /* Hidden by default */
+        }
+    </style>
 </head>
 <body>
-  <canvas id="gameCanvas" width="400" height="400"></canvas>
-
-  <script src="game.js"></script>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div class="text">
+        <h1 class="fade-text">Hello.</h1>
+        <h1 class="fade-text">Welcome to the void.</h1>
+        <h1 class="fade-text">Please use your arrow keys.</h1>
+        <h1 class="fade-text">Down-Arrow for extra jump.</h1>
+    </div>
+    <div class="path-box" id="pathBox"></div> 
+    <script src="game.js"></script>
 </body>
 </html>
